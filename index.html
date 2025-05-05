@@ -55,7 +55,7 @@
       .then(data => {
         const container = document.getElementById("blog-feed");
         container.innerHTML = "";
-        const items = data.items.slice(0, 6);
+        const items = data.items.slice(0, 9);
 
         items.forEach(item => {
           const preview = item.description.replace(/<[^>]*>?/gm, "").slice(0, 120) + "...";
